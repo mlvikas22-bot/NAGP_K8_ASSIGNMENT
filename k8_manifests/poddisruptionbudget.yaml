@@ -1,0 +1,13 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+
+metadata:
+  name: employee-api-pdb
+  namespace: nagp
+
+spec:
+  minAvailable: 2
+
+  selector:
+    matchLabels:
+      app: employee-api
