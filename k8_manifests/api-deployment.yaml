@@ -29,7 +29,7 @@ spec:
 
       - name: api
 
-        image: YOUR_DOCKERHUB_USERNAME/employee-api:v1
+        image: vicky2609/employee-api:v1
 
         imagePullPolicy: Always
 
